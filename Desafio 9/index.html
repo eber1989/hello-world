@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre Argentina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" sizes="64x64" href="../Desafio 9/img/favicon.png">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Desafio 9/css/style.css">
+
+</head>
+
+<body class="background">
+    <header class="encabezado">
+
+  
+        <div class="flex-container">
+
+                <div><img class="img" src="../Desafio 9/img/mercado-liebre.png" alt="logo"></div>
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Todas las opciones en un mismo lugar">
+                    <button type="submit" class="searchButton">
+                        <i class='bx bx-search-alt-2'></i>
+                    </button>
+                </div>
+
+                <div class="hamburgercontainer">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+        
+                    <ul class="menu__box">
+                        <li> <a class="menu__item" data-toggle="modal" data-target="#myModal">Creá tu cuenta</a>
+                        <li><a class="menu__item" data-toggle="modal" data-target="#myModal">Ingresá</a></li>
+                        <li><a class="menu__item" data-toggle="modal" data-target="#myModal2">Contacto</a></li>
+                        <li><a class="menu__item" data-toggle="modal" data-target="#myModal3">Redes</a></li>
+        
+                    </ul>
+        
+                </div>
+        </div>
+        
+
+        <div class="abajo">
+            <div class="productos">Todos los productos</div>
+            <div class="derecha">
+                <div class="ingresa">
+                    <a data-toggle="modal" data-target="#myModal">Creá tu cuenta</a><i class='bx bx-id-card'
+                        data-toggle="modal" data-target="#myModal"></i>
+                </div>
+                <div class="ingresa">
+                    <a data-toggle="modal" data-target="#myModal">Ingresá</a><i class='bx bx-log-in' data-toggle="modal"
+                        data-target="#myModal"></i>
+                </div>
+            </div>
+        </div>
+      
+
+    </header>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/banner1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/banner2.jpg" alt="Second slide">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+
+        <div class="titulo1">
+            <h2>Disfrutá nuestras ofertas</h2>
+        </div>
+
+        <nav class="ofertas">
+            <div class="card">
+                <img src="./img/productos/img-cafetera-moulinex.jpg" class="card-img-top" alt="">
+                <div class="texto">
+                    <h4>Cafetera Moulinex</h4>
+                </div>
+                <p><button class="btn btn-primary">Comprar</button></p>
+            </div>
+
+            <div class="card">
+                <img src="./img/productos/img-macbook-pro-2019.jpg" class="card-img-top" alt="">
+                <div class="texto">
+                    <h4>MacBook Pro 2019</h4>
+
+                </div>
+                <p><button class="btn btn-primary">Comprar</button></p>
+
+            </div>
+
+            <div class="card">
+                <img src="./img/productos/img-tv-samsung-smart.jpg" class="card-img-top" alt="">
+                <div class="texto">
+                    <h4>TV LG 40 Pulgadas</h4>
+                </div>
+                <p><button class="btn btn-primary">Comprar</button></p>
+
+            </div>
+
+
+            <div class="card">
+                <img src="./img/productos/img-samsung-galaxy-s10.jpg" class="card-img-top" alt="">
+                <div class="texto">
+                    <h4>Samsung Galaxy </h4>
+
+                </div>
+                <p><button class="btn btn-primary">Comprar</button></p>
+
+            </div>
+        </nav>
+
+        <div class="titulo2">
+            <h2>Productos destacados</h2>
+        </div>
+
+        <section class="pdestacados">
+            <div class="card">
+                <figure class="card__thumbnail">
+                    <img src="./img/productos/img-samsung-galaxy-s10.jpg" class="card-img-back" alt="">
+                    <span class="texto2">
+                        <h3>Smartphone Samsung Galaxy</h3>
+                    </span>
+                </figure>
+            </div>
+
+            <div class="card">
+                <figure class="card__thumbnail">
+                    <img src="./img/productos/img-tv-samsung-smart.jpg" class="card-img-back" alt="">
+                    <span class="texto2">
+                        <h3>TV Smart 40" Samsung</h3>
+                    </span>
+                </figure>
+            </div>
+        </section>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="form-container">
+                        <nav class="padre-form">
+                            <div class="logo"> <a href="../Desafio 9/index.html"><img class="img-form"
+                                        src="../Desafio 9/img/mercado-liebre.png" alt="logo"></a>
+                            </div>
+                        </nav>
+                        <div class="card-form">
+                            <h3>¡Hola! Para seguir, ingresá los siguientes datos:</h3>
+                        </div>
+                        <div class="cajas">
+                            <form class="formulario">
+                                <div class="box">
+                                    <label for="nombre">Nombre:</label>
+                                    <input class="form-input" type="text" name="nombre" id="nombre" />
+                                </div>
+                                <div class="box">
+                                    <label for="apellido">Apellido:</label>
+                                    <input class="form-input" type="text" name="apellido" id="apellido" />
+                                </div>
+                                <div class="box">
+                                    <label for="email">Email:</label>
+                                    <input class="form-input" type="email" name="email" id="email" />
+                                </div>
+                        </div>
+
+                        <div class="botones-form">
+                            <input type="submit" value="Continuar" button class="btn btn-primary"></button>
+
+                            <input type="reset" value="Borrar" button class="btn btn-primary"></button>
+                        </div>
+                        </form>
+                    </div>
+                    <h6 class="captcha">Protegido por reCAPTCHA</h6>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="myModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="form-container">
+                        <nav class="padre-form">
+                            <div class="logo"> <a href="../Desafio 9/index.html"><img class="img-form"
+                                        src="../Desafio 9/img/mercado-liebre.png" alt="logo"></a>
+                            </div>
+                        </nav>
+                        <div class="card-form">
+                            <h3>¡Hola! Tenemos más servicios para ofrecerte</h3>
+                        </div>
+                        <div class="cajas">
+
+                            <h2>MercadoLiebre Pago</h2>
+                            <h2>MercadoLiebre Shops</h2>
+                            <h2>Liebre Envíos</h2>
+                            <div class="botones-form">
+                                <input type="submit" value="Continuar" button class="btn btn-primary"></button>
+
+                                <input type="reset" value="Volver" button class="btn btn-primary"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div id="myModal2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="form-container">
+                            <nav class="padre-form">
+                                <div class="logo"> <a href="../Desafio 9/index.html"><img class="img-form"
+                                            src="../Desafio 9/img/mercado-liebre.png" alt="logo"></a>
+                                </div>
+                            </nav>
+                            <div class="card-form">
+                                <h3>¡Hola! Buscamos gente como vos. Dejá tus correo y te contactaremos:</h3>
+                            </div>
+                            <div class="cajas">
+                                <form class="formulario">
+
+                                    <div class="box">
+                                        <label for="email">Email:</label>
+                                        <input class="form-input" type="email" name="email" id="email" />
+                                    </div>
+                            </div>
+
+                            <div class="botones-form">
+                                <input type="submit" value="Continuar" button class="btn btn-primary"></button>
+
+                                <input type="reset" value="Borrar" button class="btn btn-primary"></button>
+                            </div>
+                            </form>
+                        </div>
+                        <h6 class="captcha">Protegido por reCAPTCHA</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal3" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="form-container">
+                            <nav class="padre-form">
+                                <div class="logo"> <a href="../Desafio 9/index.html"><img class="img-form"
+                                            src="../Desafio 9/img/mercado-liebre.png" alt="logo"></a>
+                                </div>
+                            </nav>
+                            <div class="card-form">
+                                <h3>¡Hola! Seguinos en nuestras redes:</h3>
+                            </div>
+                            <div class="cajas">
+
+                                <h2><i class='bx bxl-facebook'></i>Facebook</h2>
+                                <h2><i class='bx bxl-instagram'></i>Instagram</h2>
+                                <h2><i class='bx bxl-linkedin'></i>Linkedin</h2>
+                                <h2><i class='bx bxl-youtube'></i>YouTube</h2>
+
+                                <div class="botones-form">
+                                    <input type="submit" value="Continuar" button class="btn btn-primary"></button>
+
+                                    <input type="reset" value="Volver" button class="btn btn-primary"></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <hr>
+    <footer>
+        <nav class="footertl">
+            <div class="follow"><a data-toggle="modal" data-target="#myModal3">Seguinos</a>
+                <div class="redes">
+                    <h6><i class='bx bxl-facebook'></i>Facebook</h6>
+                    <h6><i class='bx bxl-instagram'></i>Instagram</h6>
+                    <h6><i class='bx bxl-linkedin'></i>Linkedin</h6>
+                    <h6><i class='bx bxl-youtube'></i>YouTube</h6>
+    
+                </div>
+            </div>
+            <div class="services"><a data-toggle="modal" data-target="#myModal4">Otros servicios</a>
+                <div class="servicios">
+                    MercadoLiebre Pago
+                    <br>
+                    MercadoLiebre Shops
+                    <br>
+                    Liebre Envios
+                </div>
+            </div>
+            <div class="contact"><a data-toggle="modal" data-target="#myModal2">Trabajá con nosotros</a>
+                <div class="trabajo">
+
+                    <input type="text" class="contactinput" placeholder="Ingresá tu email">
+                    <input type="submit" value="Enviar" button class="btn btn-secondary"></button>
+                </div>
+            </div>
+
+        </nav>
+
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
